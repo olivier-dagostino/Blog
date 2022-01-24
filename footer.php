@@ -28,8 +28,8 @@
                             <li><a href="#">Lorem ipsum dolor sit amet</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
-                        <p class="copyright">Olidev&Co© 2022</p>
+                    <div class="col-lg-3 item social"><a href="https://www.facebook.com/VilledeLaCiotat/"><i class="icon ion-social-facebook"></i></a><a href="https://twitter.com/VilledeLaCiotat"><i class="icon ion-social-twitter"></i></a><a href="https://www.instagram.com/villedelaciotat/?hl=fr"><i class="icon ion-social-instagram"></i></a>
+                        <p class="copyright">Oli&Co© 2022</p>
                     </div>
                 </div>
             </div>
