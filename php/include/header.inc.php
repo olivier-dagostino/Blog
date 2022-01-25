@@ -26,21 +26,21 @@
                         <div class="icon"><i class="fal fa-wind-turbine"></i></div>
                         <div class="text">
                             <div class="title">Histoire de La Ville<i class="far fa-arrow-right"></i></div>
-                            <div class="sub-text"></div>
+                            <!-- <div class="sub-text"></div> -->
                         </div>
                     </div>
                     <div class="icon-box">
                         <div class="icon"><i class="fal fa-lightbulb-on"></i></div>
                         <div class="text">
-                            <div class="title">Idea Creator <i class="far fa-arrow-right"></i></div>
-                            <div class="sub-text">Think of an idea, and have an AI create it.</div>
+                            <div class="title">A Propos <i class="far fa-arrow-right"></i></div>
+                            <!-- <div class="sub-text">*******</div> -->
                         </div>
                     </div>
                     <div class="icon-box">
                         <div class="icon"><i class="fal fa-bomb"></i></div>
                         <div class="text">
                             <div class="title">Super Collider <i class="far fa-arrow-right"></i></div>
-                            <div class="sub-text">Remove mass from any object.</div>
+                            <!-- <div class="sub-text">Remove mass from any object.</div> -->
                         </div>
                     </div>
                     <div class="sub-menu-holder"></div>
@@ -55,28 +55,28 @@
                         <div class="icon"><i class="far fa-question-circle"></i></div>
                         <div class="text">
                             <div class="title">Histoire de La Ville <i class="far fa-arrow-right"></i></div>
-                            <div class="sub-text">From Professionals</div>
+                            <!-- <div class="sub-text">From Professionals</div> -->
                         </div>
                     </div>
                     <div class="icon-box gb b">
                         <div class="icon"><i class="far fa-users-class"></i></div>
                         <div class="text">
                             <div class="title">Berceau du Cinema <i class="far fa-arrow-right"></i></div>
-                            <div class="sub-text">In Classroom</div>
+                            <!-- <div class="sub-text">In Classroom</div> -->
                         </div>
                     </div>
                     <div class="icon-box gb c">
                         <div class="icon"><i class="far fa-school"></i></div>
                         <div class="text">
                             <div class="title">Le Chantier Naval <i class="far fa-arrow-right"></i></div>
-                            <div class="sub-text">By Video</div>
+                            <!-- <div class="sub-text">By Video</div> -->
                         </div>
                     </div>
                     <div class="icon-box gb d">
                         <div class="icon"><i class="far fa-chess-rook"></i></div>
                         <div class="text">
                             <div class="title">Le Parc National des Calanques <i class="far fa-arrow-right"></i></div>
-                            <div class="sub-text">The Castle</div>
+                            <!-- <div class="sub-text">The Castle</div> -->
                         </div>
                     </div>
                     <!-- <div class="icon-box gb e">
