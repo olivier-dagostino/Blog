@@ -13,15 +13,16 @@
                         </ul>
                     </div>
                     <div class="col-sm-4 col-md-3 item">
-                        <h3>About</h3>
+                        <h3>Catégories</h3>
                         <ul>
-                            <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-                            <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-                            <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                            <li><a href="#">Histoire de la Ville</a></li>
+                            <li><a href="#">Le Chantier Naval</a></li>
+                            <li><a href="#">Le Berceau du Cinema</a></li>
+                            <li><a href="#">Le Parc National des Calanques</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-4 col-md-3 item">
-                        <h3>Careers</h3>
+                        <h3>A propos</h3>
                         <ul>
                             <li><a href="#">Lorem ipsum dolor sit amet</a></li>
                             <li><a href="#">Lorem ipsum dolor sit amet</a></li>
@@ -29,7 +30,7 @@
                         </ul>
                     </div>
                     <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
-                        <p class="copyright">Olidev&Co© 2022</p>
+                        <p class="copyright">Oli&Co© 2022</p>
                     </div>
                 </div>
             </div>

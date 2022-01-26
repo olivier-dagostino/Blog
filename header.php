@@ -19,11 +19,11 @@
         <div>
             <div class="header-dark">
                 <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
-                    <div class="container"><a class="navbar-brand" href="#">Le Blog du Ciotadens</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div class="container"><a class="navbar-brand" href="index.php">Le Blog du Ciotadens</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                         <div class="collapse navbar-collapse" id="navcol-1">
                             <ul class="nav navbar-nav">
                                 <li class="nav-item" role="presentation">
-                                    <a class="nav-link" href="https://www.laciotat.com/">LaCiotat.com</a>
+                                    <a class="nav-link" href="https://www.laciotat.com/">La Ciotat.com</a>
                                 </li>
                                 <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="">Catégories </a>
                                     <div class="dropdown-menu" role="menu">
@@ -42,9 +42,9 @@
                                 </div>
                             </form>
                             <span class="navbar-text">
-                                <a href="#" class="login">Se Connecter</a>
+                                <a href="connexion.php" class="login">Se Connecter</a>
                             </span>
-                            <a class="btn btn-light action-button" role="button" href="#">S'Inscrire</a>
+                            <a class="btn btn-light action-button" role="button" href="inscription.php">S'Inscrire</a>
                         </div>
                     </div>
                 </nav>

@@ -2,6 +2,9 @@
   margin: 0px;
   padding: 0px;
 }
+main{
+  font-family:'Bitter', serif;
+}
 /* header{
   height: fit-content;
   width: 100%;
@@ -126,6 +129,7 @@
   
   .header-dark .navbar .form-inline label {
     color:#ccc;
+    position: absolute;
   }
   
   .header-dark .navbar .form-inline .search-field {
@@ -367,6 +371,7 @@ p{
   margin: 20px;
 }
 
+
 .container > .container1 > .container1-a > h2 > a {
   text-decoration: none;
   color: white;
@@ -382,4 +387,83 @@ p{
 .container > .container1 > .container1-g > h2 > a {
   text-decoration: none;
   color: white;
+}
+/*Module Connexion*/
+.first{
+  display: flex;
+  justify-content: center;
+  margin: 80px;
+}
+
+.form-connexion{
+  padding: 30px;
+  margin: 20px;
+  height: fit-content;
+  width: fit-content;
+  border: solid #6c757d;
+  border-radius: 0% 20% 0% 20%;
+  box-shadow: 7px -4px 5px 0px rgb(76 76 84 / 20%);
+}
+
+
+#form-connexion{
+  display: flex;
+  flex-direction: column;
+  background-color: linear-gradient(#e66465, #9198e5);
+}
+
+input{
+  margin: 20px;
+}
+.first > .form-connexion > #form-connexion > a{
+  text-align: center;
+}
+
+#pas-inscrit{
+  margin: 20px;
+}
+
+.first > .form-connexion > h2{
+  text-align: center;
+}
+
+.first > .form-connexion > form > label {
+  text-align: center;
+}
+/*Formulaire Inscription*/
+
+.form-inscription{
+  padding: 30px;
+  margin: 20px;
+  height: fit-content;
+  width: fit-content;
+  border: solid #6c757d;
+  border-radius: 0% 20% 0% 20%;
+  box-shadow: 7px -4px 5px 0px rgb(76 76 84 / 20%);
+  
+}
+
+#form-inscription{
+  display: flex;
+  flex-direction: column;
+}
+
+input{
+  margin: 20px;
+  box-shadow: 7px -4px 5px 0px rgb(76 76 84 / 20%);
+}
+.first > .form-inscription > #form-inscription > a{
+  text-align: center;
+}
+
+#pas-inscrit{
+  margin: 20px;
+}
+
+.first > .form-inscription > h2{
+  text-align: center;
+}
+
+.first > .form-inscription > form > label {
+  text-align: center;
 }
