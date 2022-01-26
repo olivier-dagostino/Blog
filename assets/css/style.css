@@ -1,3 +1,12 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+/* header{
+  height: fit-content;
+  width: 100%;
+} */
+
 .header-dark {
     background:url(https://kreativedecks.com/wp-content/uploads/2021/01/1200x630_100_300_000000x30x0.jpg) ;
     background-size:cover;
@@ -248,3 +257,129 @@
   }
   
   /* Credit to https://epicbootstrap.com/snippets/footer-with-columns */
+
+/*Main*/
+h2{
+  text-align: center;
+  padding: 10px;
+}
+p{
+  text-align: center;
+}
+
+.containerA {
+  display: flex;
+  justify-content: center;
+}
+
+
+.container1{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.container1-a{
+  background-color: #208f8f;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  min-width: 500px ;
+  min-height: auto;
+}
+
+.container1-b{
+  display: flex;
+  justify-content: center;
+}
+
+.container1-c{
+  background-color: #208f8f;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  min-width: 500px ;
+  min-height: auto;
+}
+
+.container1-d{
+  display: flex;
+  justify-content: center;
+}
+
+.container1-e{
+  background-color: #208f8f;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  min-width: 500px ;
+  min-height: auto;
+}
+
+.container1-f{
+  display: flex;
+  justify-content: center;
+}
+.container1-g{
+  background-color: #208f8f;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  min-width: 500px ;
+  min-height: auto;
+}
+
+.container1-h{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+#carte_postale{
+  height: 200px;
+  width: auto;
+  border-radius: 10% 10% 10% 10%;
+  margin: 20px;
+}
+#chantier_naval{
+  height: 200px;
+  width: auto;
+  border-radius: 10% 10% 10% 10%;
+  margin: 20px;
+}
+#train_gare{
+  height: 200px;
+  width: auto;
+  border-radius: 10% 10% 10% 10%;
+  margin: 20px;
+}
+#parc_national{
+  height: 200px;
+  width: auto;
+  border-radius: 10% 10% 10% 10%;
+  margin: 20px;
+}
+
+.container > .container1 > .container1-a > h2 > a {
+  text-decoration: none;
+  color: white;
+}
+.container > .container1 > .container1-c > h2 > a {
+  text-decoration: none;
+  color: white;
+}
+.container > .container1 > .container1-e > h2 > a {
+  text-decoration: none;
+  color: white;
+}
+.container > .container1 > .container1-g > h2 > a {
+  text-decoration: none;
+  color: white;
+}

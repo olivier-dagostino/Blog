@@ -25,7 +25,7 @@
                                 <li class="nav-item" role="presentation">
                                     <a class="nav-link" href="https://www.laciotat.com/">LaCiotat.com</a>
                                 </li>
-                                <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Catégories </a>
+                                <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="">Catégories </a>
                                     <div class="dropdown-menu" role="menu">
                                         <a class="dropdown-item" role="presentation" href="#">Histoire de la ville</a>
                                         <a class="dropdown-item" role="presentation" href="#">Berceau du Cinéma</a>
