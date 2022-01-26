@@ -2,12 +2,12 @@
 <main>
     <div class="first">
         <div class="form-connexion">
-            <h2>Log In</h2>
+            <h2><strong>Log In</strong></h2>
             <form id="form-connexion" action="post">
-                <label name="login" type="text" placeholder="login"required >Login</label>
-                <input type="login">
-                <label type="password" placeholder="Mot de Passe" requried >Mot de Passe</label>
-                <input type="login">
+                <label for="login">Login</label>
+                <input type="login" name="login" type="text" placeholder="Login" required >
+                <label for="password">Mot de Passe</label>
+                <input type="password" placeholder="Mot de Passe" requried >
                 <input type="submit" value="Envoyer" name="submit">
                 <a id="pas-inscrit" href="inscription.php">Pas encore Inscrit ?</a>
             </form>
