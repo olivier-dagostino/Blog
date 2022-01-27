@@ -9,7 +9,6 @@
                 <label for="password">Mot de Passe</label>
                 <input type="password" placeholder="Mot de Passe" requried >
                 <input type="submit" value="Envoyer" name="submit">
-                <a id="pas-inscrit" href="inscription.php">Pas encore Inscrit ?</a>
             </form>
         </div>
     </div>
