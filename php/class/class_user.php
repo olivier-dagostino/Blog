@@ -1,5 +1,5 @@
 <?php
-class user
+class User
 {
 
     public $bdd = '';
@@ -12,7 +12,7 @@ class user
     public function __construct($dbname)
     {
         try {
-            $bdd = new PDO("mysql:host=localhost:8888;dbname=blog", 'root', 'root', [PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ, PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+            $bdd = new PDO("mysql:host=localhost:8888;dbname=$dbname", 'root', 'root', [PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ, PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
             $this->bdd = $bdd;
         } catch (PDOException $e) {
             $error = $e->getMessage();
@@ -29,7 +29,8 @@ class user
     //Vérifie que le login n'est pas déjà utilisé
     public function issetUser($login)
     {
-        $query_issset_user = $this->bdd->query("SELECT * FROM utilisateurs WHERE login='$login'");
+        $query_issset_user = $this->bdd->prepare("SELECT * FROM utilisateurs WHERE login=:login");
+        $query_issset_user->execute(array(':login'=>$login));
         $isset_user = $query_issset_user->fetch();
 
         return $isset_user;
@@ -40,9 +41,9 @@ class user
     {
         $insert_user = $this->bdd->prepare("INSERT INTO utilisateurs (login, password, email) VALUES (:login, :password, :email)");
         $insert_user->execute([
-            'login' => $login,
-            'password' => $password,
-            'email' => $email
+            ':login' => $login,
+            ':password' => $password,
+            ':email' => $email
         ]);
     }
 

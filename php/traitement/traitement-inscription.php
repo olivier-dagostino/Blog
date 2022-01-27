@@ -1,18 +1,14 @@
 <?php
-include 'php/class/class_user.php';
+include '../class/class_user.php';
+echo"test";
 
-session_start();
+$user = new User('blog');
 
-$user = new user('blog');
 
-if (isset($_SESSION["id"])) {
-    header("Location:index.php");
-} else {
-    if (isset($_POST["submit"], $_POST["login"], $_POST["email"], $_POST["password"], $_POST["confpw"]) && !empty($_POST["login"]) && !empty($_POST["password"]) && !empty($_POST["confpw"]) && !empty($_POST["email"])) {
+    if (isset($_POST["submit-in"], $_POST["login"], $_POST["email"], $_POST["password"], $_POST["confpw"]) && !empty($_POST["login"]) && !empty($_POST["password"]) && !empty($_POST["confpw"]) && !empty($_POST["email"])) {
         $login = $_POST["login"];
         $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
         $email = $_POST["email"];
-
         if (empty($user->issetUser($login))) //Appel la fonction dans la classe user => vérifie que le login n'existe pas
         {
             if ($_POST["password"] == $_POST["confpw"]) {
@@ -30,5 +26,3 @@ if (isset($_SESSION["id"])) {
             $msg_error = "login déjà existant";
         }
     }
-}
-?>
