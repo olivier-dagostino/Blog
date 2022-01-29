@@ -1,5 +1,5 @@
 <?php
-include '../class/class_user.php';
+include './php/class/class_user.php';
 echo"test";
 
 $user = new User('blog');

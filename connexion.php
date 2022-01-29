@@ -2,7 +2,7 @@
 
 
 require 'header.php';
-include 'php/traitement/traitement-connexion.php'; 
+include 'php/traitement/traitement-inscription.php'; 
 include 'php/include/conn_bdd.php'; 
 
 ?>

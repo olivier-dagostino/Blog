@@ -1,268 +1,195 @@
 *{
   margin: 0px;
   padding: 0px;
-  font-family:'Bitter', serif;
+  
 }
-body{
+
+body
+{
+  font-family: Verdana, Calibri, sans-serif;
 }
-/* header{
-  height: fit-content;
+
+/* HEADER */
+
+
+nav 
+{
   width: 100%;
-} */
+  background-color: #4589cf
+}
+nav > ul
+{
+  margin: 0px;
+  padding: 0px;
+}
 
-.header-dark {
-    background:url(https://kreativedecks.com/wp-content/uploads/2021/01/1200x630_100_300_000000x30x0.jpg) ;
-    background-size:cover;
-    padding-bottom:80px;
-  }
-  
-  @media (min-width:768px) {
-    .header-dark {
-      padding-bottom:120px;
-    }
-  }
-  
-  .header-dark .navbar {
-    background:transparent;
-    padding-top:0;
-    padding-bottom:0;
-    color:#fff;
-    border-radius:0;
-    box-shadow:none;
-    border:none;
-  }
-  
-  @media (min-width:768px) {
-    .header-dark .navbar {
-      padding-top:.75rem;
-      padding-bottom:.75rem;
-    }
-  }
-  
-  .header-dark .navbar .navbar-brand {
-    font-weight:bold;
-    color:inherit;
-  }
-  
-  .header-dark .navbar .navbar-brand:hover {
-    color:#f0f0f0;
-  }
-  
-  .header-dark .navbar .navbar-collapse span {
-    margin-top:5px;
-  }
-  
-  .header-dark .navbar .navbar-collapse span .login {
-    color:#d9d9d9;
-    margin-right:.5rem;
-    text-decoration:none;
-  }
-  
-  .header-dark .navbar .navbar-collapse span .login:hover {
-    color:#fff;
-  }
-  
-  .header-dark .navbar .navbar-toggler {
-    border-color:#747474;
-  }
-  
-  .header-dark .navbar .navbar-toggler:hover, .header-dark .navbar-toggler:focus {
-    background:none;
-  }
-  
-  .header-dark .navbar .navbar-toggler {
-    color:#eee;
-  }
-  
-  .header-dark .navbar .navbar-collapse, .header-dark .navbar .form-inline {
-    border-color:#636363;
-  }
-  
-  @media (min-width: 992px) {
-    .header-dark .navbar.navbar .navbar-nav .nav-link {
-      padding-left:1.2rem;
-      padding-right:1.2rem;
-    }
-  }
-  
-  .header-dark .navbar.navbar-dark .navbar-nav .nav-link {
-    color:#d9d9d9;
-  }
-  
-  .header-dark .navbar.navbar-dark .navbar-nav .nav-link:focus, .header-dark .navbar.navbar-dark .navbar-nav .nav-link:hover {
-    color:#fcfeff !important;
-    background-color:transparent;
-  }
-  
-  .header-dark .navbar .navbar-nav > li > .dropdown-menu {
-    margin-top:-5px;
-    box-shadow:0 4px 8px rgba(0,0,0,.1);
-    background-color:#fff;
-    border-radius:2px;
-  }
-  
-  .header-dark .navbar .dropdown-menu .dropdown-item:focus, .header-dark .navbar .dropdown-menu .dropdown-item {
-    line-height:2;
-    font-size:14px;
-    color:#37434d;
-  }
-  
-  .header-dark .navbar .dropdown-menu .dropdown-item:focus, .header-dark .navbar .dropdown-menu .drodown-item:hover {
-    background:#ebeff1;
-  }
-  
-  .header-dark .navbar .action-button, .header-dark .navbar .action-button:active {
-    background:#3181c5bf;
-    border-radius:20px;
-    font-size:inherit;
-    color:#fff;
-    box-shadow:none;
-    border:none;
-    text-shadow:none;
-    padding:.5rem .8rem;
-    transition:background-color 0.25s;
-  }
-  
-  .header-dark .navbar .action-button:hover {
-    background: #3180c5;
-  }
-  
-  .header-dark .navbar .form-inline label {
-    color:#ccc;
-    position: absolute;
-  }
-  
-  .header-dark .navbar .form-inline .search-field {
-    display:inline-block;
-    width:80%;
-    background:none;
-    border:none;
-    border-bottom:1px solid transparent;
-    border-radius:0;
-    color:#ccc;
-    box-shadow:none;
-    color:inherit;
-    transition:border-bottom-color 0.3s;
-  }
-  
-  .header-dark .navbar .form-inline .search-field:focus {
-    border-bottom:1px solid #ccc;
-  }
-  
-  .header-dark .hero {
-    margin-top:60px;
-  }
-  
-  @media (min-width:768px) {
-    .header-dark .hero {
-      margin-top:20px;
-    }
-  }
-  
-  .header-dark .hero h1 {
-    color:#fff;
-    font-family:'Bitter', serif;
-    font-size:40px;
-    margin-top:20px;
-    margin-bottom:80px;
-  }
-  
-  @media (min-width:768px) {
-    .header-dark .hero h1 {
-      margin-bottom:50px;
-      line-height:1.5;
-    }
-  }
-  
-  .footer-clean {
-    padding:50px 0;
-    background-color:#fff;
-    color:#4b4c4d;
-  }
-  
-  .footer-clean h3 {
-    margin-top:0;
-    margin-bottom:12px;
-    font-weight:bold;
-    font-size:16px;
-  }
-  
-  .footer-clean ul {
-    padding:0;
-    list-style:none;
-    line-height:1.6;
-    font-size:14px;
-    margin-bottom:0;
-  }
-  
-  .footer-clean ul a {
-    color:inherit;
-    text-decoration:none;
-    opacity:0.8;
-  }
-  
-  .footer-clean ul a:hover {
-    opacity:1;
-  }
-  
-  .footer-clean .item.social {
-    text-align:right;
-  }
-  
-  @media (max-width:767px) {
-    .footer-clean .item {
-      text-align:center;
-      padding-bottom:20px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .footer-clean .item.social {
-      text-align:center;
-    }
-  }
-  
-  .footer-clean .item.social > a {
-    font-size:24px;
-    width:40px;
-    height:40px;
-    line-height:40px;
-    display:inline-block;
-    text-align:center;
-    border-radius:50%;
-    border:1px solid #ccc;
-    margin-left:10px;
-    margin-top:22px;
-    color:inherit;
-    opacity:0.75;
-  }
-  
-  .footer-clean .item.social > a:hover {
-    opacity:0.9;
-  }
-  
-  @media (max-width:991px) {
-    .footer-clean .item.social > a {
-      margin-top:40px;
-    }
-  }
-  
-  @media (max-width:767px) {
-    .footer-clean .item.social > a {
-      margin-top:10px;
-    }
-  }
-  
-  .footer-clean .copyright {
-    margin-top:14px;
-    margin-bottom:0;
-    font-size:13px;
-    opacity:0.6;
-  }
-  
-  /* Credit to https://epicbootstrap.com/snippets/footer-with-columns */
+nav li 
+{
+  list-style-type: none;
+}
 
-/*Main*/
+nav > ul > li
+{
+  float: left;
+  position: relative;
+}
+
+nav > ul::after
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.submenu
+{
+  display: none;
+}
+
+nav input[type=checkbox]
+{
+  display: none;
+}
+
+nav label
+{
+  display: none;
+}
+
+
+nav a 
+{
+  display: inline-block;
+  text-decoration: none;
+}
+
+nav > ul > li > a 
+{
+  padding: 20px;
+  color: #fff;
+}
+
+nav > ul > li:hover a
+{
+  padding: 15px 30px 20px 30px;
+}
+
+nav li:hover .submenu
+{
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  padding: 0px;
+  z-index: 1000;
+}
+
+.submenu li a 
+{
+  padding: 15px 30px;
+  font-size: 13px;
+  columns: #4589cf;
+  width: 270px;
+}
+
+.submenu li
+{
+border-bottom: 1px solid #CCC;
+}
+
+.menu-home:hover
+{
+  border-top: 5px solid #45cfc9;
+}
+.menu-log:hover
+{
+  border-top: 5px solid #45cfc9;
+}
+.menu-log:hover
+{
+  border-top: 5px solid #45cfc9;
+}
+.menu-sign:hover
+{
+  border-top: 5px solid #45cfc9;
+}
+.menu-cat:hover
+{
+  border-top: 5px solid #45cfc9;
+}
+
+.menu-contact:hover
+{
+  border-top: 5px solid #45cfc9;
+}
+
+.menu-edit :hover{
+  border-top: 5px solid #45cfc9;
+}
+
+.menu-cat .submenu
+{
+  background-color:#45cfc9;
+}
+
+.menu-edit .submenu{
+  background-color:#45cfc9;
+}
+
+.submenu li:hover a
+{
+  color: #eee;
+  font-weight: bold;
+}
+
+nav input[type=checkbox]:checked ~ ul
+{
+  display: block;
+}
+
+@media screen and (max-width : 780px)
+{
+  .menu-mobile
+  {
+    display: block;
+    color: #fff;
+    background-color: rgba(29, 197, 151, 0.97);
+    text-align: center;
+    padding: 12px 0px;
+  }
+
+  nav ul
+  {
+    display: none;
+  }
+
+  nav ul li, nav ul li a
+  {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li, nav ul li:hover a
+  {
+    padding: 10px 0px;
+  }
+
+  nav li:hover .submenu
+  {
+    display: block;
+    position: static;
+  }
+}
+
+/* FIN DU HEADER */
+
+/* MAIN */
+
+.background-image{
+  background-image:url(https://kreativedecks.com/wp-content/uploads/2021/01/1200x630_100_300_000000x30x0.jpg);
+  background-size:cover;
+  position: sticky
+}
 h2{
   text-align: center;
   padding: 10px;
@@ -272,6 +199,9 @@ p{
 }
 
 .containerA {
+  background-image:url(https://kreativedecks.com/wp-content/uploads/2021/01/1200x630_100_300_000000x30x0.jpg);
+  background-size:cover;
+  position: sticky;
   display: flex;
   justify-content: center;
 }
@@ -285,7 +215,7 @@ p{
 }
 
 .container1-a{
-  background-color:#3181c5bf;
+  background-color:#45cfc980;
   margin: 40px;
   display: flex;
   flex-direction: column;
@@ -301,7 +231,7 @@ p{
 }
 
 .container1-c{
-  background-color: #3181c5bf;
+  background-color: #45cfc980;
   margin: 40px;
   display: flex;
   flex-direction: column;
@@ -317,7 +247,7 @@ p{
 }
 
 .container1-e{
-  background-color: #3181c5bf;
+  background-color: #45cfc980;
   margin: 40px;
   display: flex;
   flex-direction: column;
@@ -332,7 +262,7 @@ p{
   justify-content: center;
 }
 .container1-g{
-  background-color: #3181c5bf;
+  background-color: #45cfc980;
   margin: 40px;
   display: flex;
   flex-direction: column;
@@ -527,3 +457,56 @@ input::placeholder {
   text-align: center;
   font-size: 20px;
 }
+
+/* FOOTER */
+
+.footer{
+  display: flex;
+  justify-content: space-around;
+  background-color: #4589cf;
+  padding: 20px;
+
+}
+
+.footer > .footer-1 > ul
+  {
+    list-style-type: none;
+  }
+
+.footer > .footer-1 > ul > li > a
+  {
+    text-decoration:  none;
+    color: #fff;
+  }
+  .footer > .footer-1 > h3{
+    padding: 10px;
+  }
+
+.footer > .footer-2 > ul
+  {
+    list-style-type: none;
+  }
+
+  .footer > .footer-2 > ul > li > a
+  {
+    text-decoration:  none;
+    color: #fff;
+  }
+
+  .footer > .footer-2 > h3{
+    padding: 10px;
+  }
+
+.footer > .footer-3 > ul
+  {
+    list-style-type: none;
+  }
+  .footer > .footer-3 > ul > li > a
+  {
+    text-decoration:  none;
+    color: #fff;
+  }
+  .footer > .footer-3 > h3{
+    padding: 10px;
+  }
+/* FIN DU FOOTER */

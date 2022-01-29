@@ -29,21 +29,21 @@ class User
     //Vérifie que le login n'est pas déjà utilisé
     public function issetUser($login)
     {
-        $query_issset_user = $this->bdd->prepare("SELECT * FROM utilisateurs WHERE login=:login");
-        $query_issset_user->execute(array(':login'=>$login));
+        $query_issset_user = $this->bdd->query("SELECT * FROM utilisateurs WHERE login='$login'");
         $isset_user = $query_issset_user->fetch();
 
         return $isset_user;
     }
+    
 
     //Insert les infos de l'utilisateur en base de données
     public function register($login, $password, $email)
     {
         $insert_user = $this->bdd->prepare("INSERT INTO utilisateurs (login, password, email) VALUES (:login, :password, :email)");
         $insert_user->execute([
-            ':login' => $login,
-            ':password' => $password,
-            ':email' => $email
+            'login' => $login,
+            'password' => $password,
+            'email' => $email
         ]);
     }
 

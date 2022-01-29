@@ -7,7 +7,9 @@ function connexionPDO() {
         echo 'Échec de la connexion : ' . $e->getMessage();
         exit;
     }
+    var_dump($bdd);
     return $bdd;
+
 } 
 
 function recuperation($base,$selection,$table) {
