@@ -1,4 +1,13 @@
 <?php
+
+/*
+PDO::ATTR_DEFAULT_FETCH_MODE : Définit le mode de récupération par défaut
+
+PDO::FETCH_OBJ : Spécifie que la méthode d'extraction doit renvoyer chaque ligne sous la forme d'un objet avec des noms de propriété 
+                correspondant aux noms de colonne renvoyés dans le jeu de résultats.
+
+
+*/
 class User
 {
 
@@ -11,47 +20,59 @@ class User
     //Crée la connexion à la base de donnée
     public function __construct($dbname)
     {
+        $bdd = new PDO("mysql:host=localhost:8889;dbname=blog", 'root', 'root', [PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ, PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
         try {
-            $bdd = new PDO("mysql:host=localhost:8888;dbname=$dbname", 'root', 'root', [PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ, PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+
             $this->bdd = $bdd;
+
         } catch (PDOException $e) {
+
             $error = $e->getMessage();
             echo $error;
+
         }
     }
 
     //Ferme la connexion à la base de donnée
     public function __destruct()
     {
+        
         $this->bdd = '';
+
     }
 
     //Vérifie que le login n'est pas déjà utilisé
     public function issetUser($login)
     {
+        
         $query_issset_user = $this->bdd->query("SELECT * FROM utilisateurs WHERE login='$login'");
         $isset_user = $query_issset_user->fetch();
 
         return $isset_user;
+
     }
     
 
     //Insert les infos de l'utilisateur en base de données
     public function register($login, $password, $email)
     {
+       
         $insert_user = $this->bdd->prepare("INSERT INTO utilisateurs (login, password, email) VALUES (:login, :password, :email)");
         $insert_user->execute([
             'login' => $login,
             'password' => $password,
             'email' => $email
         ]);
+
     }
 
     //Créée une session["user"] et connecte l'utilisateur
     public function connect($login, $password)
     {
         if (!empty($this->issetUser($login))) {
+            
             if (password_verify($password, $this->issetUser($login)->password)) {
+                
                 $_SESSION["user"] = $this->issetUser($login);
                 header("Location:index.php");
             } else

@@ -135,6 +135,12 @@ border-bottom: 1px solid #CCC;
 .menu-edit .submenu{
   background-color:#45cfc9;
 }
+.menu-admin :hover{
+  background-color: #45cfc9;
+}
+.menu-admin .submenu {
+  background-color: #45cfc9;
+}
 
 .submenu li:hover a
 {
@@ -324,6 +330,9 @@ p{
 }
 /*Module Connexion*/
 .first{
+  background-image:url(https://kreativedecks.com/wp-content/uploads/2021/01/1200x630_100_300_000000x30x0.jpg);
+  background-size:cover;
+  position: sticky;
   display: flex;
   justify-content: center;
   margin: 80px;
