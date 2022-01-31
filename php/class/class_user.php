@@ -63,6 +63,7 @@ class User
             'password' => $password,
             'email' => $email
         ]);
+        exit;
 
     }
 
@@ -70,15 +71,16 @@ class User
     public function connect($login, $password)
     {
         if (!empty($this->issetUser($login))) {
-            
+            echo"1";
             if (password_verify($password, $this->issetUser($login)->password)) {
                 
                 $_SESSION["user"] = $this->issetUser($login);
-                header("Location:index.php");
+                echo"2";
+                header('location:index.php');
             } else
-                $this->msg_error = "Mauvais mot de passe";
+                echo "Mauvais mot de passe";
         } else
-            $this->msg_error = "Ce login n'existe pas";
+            echo  "Ce login n'existe pas";
     }
 
     //Met à jour les données de l'utilisateur en base de données

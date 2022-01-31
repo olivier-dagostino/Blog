@@ -1,32 +1,11 @@
-<?php require 'header.php' ?>
+<?php require_once 'php/include/header.inc.php' ?>
 <main>
-    <div class="background-image">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repellat facere corporis iste,<br>
-            explicabo atque, esse quasi eius beatae molestias officiis assumenda dignissimos doloribus<br>
-            aperiam dolores ipsum nisi quos! Velit?<br>
+    <div>
+        
+            <h1 id="titre-presentation">Bienvenue</h1>
             <br><br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repellat facere corporis iste,<br>
-            explicabo atque, esse quasi eius beatae molestias officiis assumenda dignissimos doloribus<br>
-            aperiam dolores ipsum nisi quos! Velit?<br>
-            <br><br>
-            <br><br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repellat facere corporis iste,<br>
-            explicabo atque, esse quasi eius beatae molestias officiis assumenda dignissimos doloribus<br>
-            aperiam dolores ipsum nisi quos! Velit?<br>
-            <br><br>
-            <br><br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repellat facere corporis iste,<br>
-            explicabo atque, esse quasi eius beatae molestias officiis assumenda dignissimos doloribus<br>
-            aperiam dolores ipsum nisi quos! Velit?<br>
-            <br><br>
-            <br><br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repellat facere corporis iste,<br>
-            explicabo atque, esse quasi eius beatae molestias officiis assumenda dignissimos doloribus<br>
-            aperiam dolores ipsum nisi quos! Velit?<br>
-            <br><br>
-            
-        </p>
+            <p><?php var_dump($_SESSION["id"]) ?></p>
+        
     </div>
 </main>
-<?php require 'footer.php' ?>
+<?php require_once 'php/include/footer.inc.php' ?>

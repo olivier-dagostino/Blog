@@ -1,11 +1,4 @@
-<?php
-
-
-?>
-
-<?php require 'header.php'; 
-
-?>
+<?php require_once 'php/include/header.inc.php';?>
 
 <main>
     <div class="first-I">
@@ -25,13 +18,7 @@
                     <input type="password" name="confpw" id="confpw" required>
                 </div>
                 <div class="form-inscription-4">
-                    <center><input type="submit" name="submit-in" class="submit"></center>
-
-                    <?php 
-                    if (isset($msg_error)) {
-                        echo '<p class="alert alert-danger w-75 p-3 m-auto text-center">' . $msg_error . '</p>';
-                    } 
-                    ?></p>
+                    <center><input type="submit" name="submit-in" class="submit"></center></p>
 
                 </div>
             </form>
@@ -39,4 +26,4 @@
     </div>
 </main>
 
-<?php require 'footer.php'; ?>
+<?php require 'php/include/footer.inc.php'; ?>

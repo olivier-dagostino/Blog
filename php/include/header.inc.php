@@ -1,6 +1,6 @@
 <?php 
-session_start();
-include 'php/include/conn_bdd.inc.php';
+
+include_once 'php/include/conn_bdd.inc.php';
 
 ?>
 
@@ -16,7 +16,7 @@ include 'php/include/conn_bdd.inc.php';
 <body>
     <header>
         <?php
-            if (isset($_SESSION['user']->id)) { /*utilisateursΛ*/
+            if (isset($_SESSION['user']->id) == 1) { /*utilisateurs*/
                 echo '
                     <nav>
                         <label for="menu-mobile" class="menu-mobile">Menu</label>
@@ -33,15 +33,16 @@ include 'php/include/conn_bdd.inc.php';
                                     <li><a href="#">Le Parc National des Calanques</a></li>
                                 </ul>  
                             </li>
-                            <li class="menu-profil"><a href="#">Profil</a></li>
+                            <li class="menu-profil"><a href="#">Profil</a>
                                 <ul class="submenu">
                                     <li><a href="#">Modifier Mon Profil</a></li>
                                 </ul>
-                            <li class="menu-cat"><a href="#">Contact</a></li>
+                            </li>
+                            <li class="menu-contact"><a href="#">Contact</a></li>
                         </ul>
                     </nav>
                 ';
-                } elseif($_SESSION['user']->id_droits == 1337) { /*Admin*/
+                } elseif(isset($_SESSION['user']->id_droits) == 1337) { /*Admin*/
                 
                     echo '
                         <nav>
@@ -69,12 +70,12 @@ include 'php/include/conn_bdd.inc.php';
                                         <li><a href="#">Gestion des utilisateurs</a></li>
                                     </ul>
                                 </li>
-                                <li class="menu-cat"><a href="#">Contact</a></li>
+                                <li class="menu-contact"><a href="#">Contact</a></li>
                             </ul>
                         </nav>
                     ';
                 
-                } elseif ($_SESSION["user"]->id_droits  == 42) { /* Modérateur*/
+                } elseif (isset($_SESSION["user"]->id_droits)  == 42) { /* Modérateur*/
                     echo'
                         <nav>
                             <label for="menu-mobile" class="menu-mobile">Menu</label>
@@ -98,7 +99,7 @@ include 'php/include/conn_bdd.inc.php';
                                         <li><a href="#">Mes articles</a></li> 
                                     </ul>
                                 </li>
-                                <li class="menu-cat"><a href="#">Contact</a></li>
+                                <li class="menu-contact"><a href="#">Contact</a></li>
                             </ul>
                         </nav>
                     ';
@@ -119,7 +120,7 @@ include 'php/include/conn_bdd.inc.php';
                                     <li><a href="#">Le Parc National des Calanques</a></li>
                                 </ul>  
                             </li>
-                            <li class="menu-cat"><a href="#">Contact</a></li>
+                            <li class="menu-contact"><a href="#">Contact</a></li>
                         </ul>
                     </nav>
                 ';
